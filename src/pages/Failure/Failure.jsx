@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './Success.scss';
+import './Failure.scss';
 import { Link } from 'react-router-dom';
 
-const Success = () => {
+const Failure = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -16,12 +16,12 @@ const Success = () => {
     <div className='container'>
       <div className="card">
         <div className={`checkMark ${isLoading ? 'spinner' : 'success'}`}>
-          {isLoading ? '' : '✅'}
+          {isLoading ? '' : '❌'}
         </div>
         {!isLoading && 
           <>
-            <div className='middle'>Thank you for ordering!!!</div>
-            <p>Your order has been placed and will be delivered in 2-3 working days</p>
+            <div className='middle'>Something went wrong!!!</div>
+            {/* <p>Your order has been placed and will be delivered in 2-3 working days</p> */}
             <Link className='home' to="/">KEEP SHOPPING</Link>
           </>
         }
@@ -30,4 +30,4 @@ const Success = () => {
   )
 }
 
-export default Success;
+export default Failure;
