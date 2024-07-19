@@ -35,6 +35,9 @@ const Navbar = () => {
           <div className="item">
             <Link className ="link" to="/products/5">Accessories</Link>
           </div>
+          <div className="item">
+            <Link className ="link" to="/products/6">Watches</Link>
+          </div>
         </div>
         <div className="center">
           <Link className ="link" to="/">FashionHub</Link>
@@ -54,7 +57,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {open && <Cart />}
+      {open && <Cart open={open} setOpen={setOpen}/>}
       {showSearch && <Search setShowSearch={setShowSearch}/>}
     </div>
   );

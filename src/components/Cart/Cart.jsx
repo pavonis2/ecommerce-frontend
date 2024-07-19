@@ -8,7 +8,7 @@ import { removeItem, resetCart } from '../../Redux/cartReducer';
 import { makeRequest } from "../../makeRequest";
 import { loadStripe } from "@stripe/stripe-js";
 
-const Cart = () => {
+const Cart = ({open, setOpen}) => {
 
   const products = useSelector(state=>state.cart.products)
   const dispatch = useDispatch()
@@ -44,6 +44,12 @@ const Cart = () => {
   return (
     <div className='cart'>
       <h1>Products in your cart</h1>
+      <div 
+        style={{position:"absolute", right:"15px", top:"24px", color:"black", cursor:"pointer"}}
+        onClick={() => {setOpen(!open)}}
+      >
+        ❌
+      </div>
       {products?.map(item =>(
         <div className='item' key={item.id}>
           <img src={credentials.REACT_APP_UPLOAD_URL +item.img} alt="" />
