@@ -33,6 +33,7 @@ const Cart = ({open, setOpen}) => {
       const res = await makeRequest.post("/orders", {
         products,
       });
+      dispatch(resetCart())
       await stripe.redirectToCheckout({
         sessionId: res.data.stripeSession.id,
       })
