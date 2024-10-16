@@ -3,10 +3,11 @@ import React from 'react'
 import './Cart.scss'
 import { useSelector } from 'react-redux'
 import { useDispatch } from "react-redux";
-import { credentials } from '../../../credentials'
 import { removeItem, resetCart } from '../../Redux/cartReducer';
 import { makeRequest } from "../../makeRequest";
 import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
 const Cart = ({open, setOpen}) => {
 
@@ -20,11 +21,6 @@ const Cart = ({open, setOpen}) => {
     })
     return total.toFixed(2);
   }
-
-  const stripePromise = loadStripe(
-    "pk_test_51NQrxqSBEeSqNoENtMoti4Osdwhph6RV9GLoxLzw28cYVzcTBZe2IzoV3TtbiM2b9StaF9LJnddXbGwEipsuPw1P00E4CTkzzK"
-  );
-
 
   const handlePayment = async () => {
     try {
@@ -53,7 +49,7 @@ const Cart = ({open, setOpen}) => {
       </div>
       {products?.map(item =>(
         <div className='item' key={item.id}>
-          <img src={credentials.REACT_APP_UPLOAD_URL +item.img} alt="" />
+          <img src={import.meta.env.VITE_UPLOAD_URL +item.img} alt="" />
           <div className="details">
             <h1>{item.title}</h1>
             <div className="price">

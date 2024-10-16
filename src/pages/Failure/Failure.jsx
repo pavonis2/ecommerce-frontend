@@ -21,7 +21,6 @@ const Failure = () => {
         {!isLoading && 
           <>
             <div className='middle'>Something went wrong!!!</div>
-            {/* <p>Your order has been placed and will be delivered in 2-3 working days</p> */}
             <Link className='home' to="/">KEEP SHOPPING</Link>
           </>
         }

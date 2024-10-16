@@ -1,33 +1,6 @@
-/* import React from 'react'
-import './Card.scss'
-import { Link } from 'react-router-dom'
-import { credentials } from '../../../credentials'
-
-const Card = ({item}) => {
-  return (
-    <Link className="link" to={`/product/${item.id}`}>
-      <div className='card'>
-        <div className="image">
-          {item?.attributes.isNew && <span>New Season</span>}
-          <img src={credentials.REACT_APP_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url} alt="" className="mainImg" loading="lazy"/>
-          <img src={credentials.REACT_APP_UPLOAD_URL+item.attributes?.img2?.data?.attributes?.url} alt="" className="secondImg" loading="lazy"/>
-        </div>
-        <h2>{item?.attributes.title}</h2>
-        <div className="prices">
-          <h3>${item.oldPrice || item?.attributes.price + 10}</h3>
-          <h3>${item?.attributes.price}</h3>
-        </div>
-      </div>
-    </Link>
-  )
-}
-
-export default Card */
-
 import React from 'react'
 import './Card.scss'
 import { Link } from 'react-router-dom'
-import { credentials } from '../../../credentials'
 import { useState } from 'react'
 import { Blurhash } from 'react-blurhash'
 import { useEffect } from 'react'
@@ -39,8 +12,8 @@ const Card = ({item}) => {
     img.onload = () => {
       setImageLoaded(true)
     }
-    img.src = credentials.REACT_APP_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url
-  }, [credentials.REACT_APP_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url])
+    img.src = import.meta.env.VITE_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url
+  }, [import.meta.env.VITE_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url])
   
   return (
     <Link className="link" to={`/product/${item.id}`}>
@@ -59,13 +32,13 @@ const Card = ({item}) => {
                 />
             </div>
             <img 
-              src={credentials.REACT_APP_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url} 
+              src={import.meta.env.VITE_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url} 
               alt="" 
               className="mainImg" 
               style={{display: !imageLoaded ? 'none' : 'inline'}}
             />
             <img 
-              src={credentials.REACT_APP_UPLOAD_URL+item.attributes?.img2?.data?.attributes?.url} 
+              src={import.meta.env.VITE_UPLOAD_URL+item.attributes?.img2?.data?.attributes?.url} 
               alt="" 
               className="secondImg" 
             />

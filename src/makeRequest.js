@@ -1,9 +1,8 @@
 import axios from "axios";
-import { credentials } from "../credentials";
 
 export const makeRequest = axios.create({
-  baseURL: credentials.REACT_APP_API_URL,
+  baseURL: import.meta.env.VITE_API_URL,
   headers: {
-    Authorization: "bearer " + credentials.REACT_APP_API_TOKEN,
+    Authorization: "bearer " + import.meta.env.VITE_API_TOKEN,
   },
-})
+});
