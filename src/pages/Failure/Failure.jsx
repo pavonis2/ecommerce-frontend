@@ -16,12 +16,15 @@ const Failure = () => {
     <div className='container'>
       <div className="card">
         <div className={`checkMark ${isLoading ? 'spinner' : 'success'}`}>
-          {isLoading ? '' : '❌'}
         </div>
         {!isLoading && 
           <>
-            <div className='middle'>Something went wrong!!!</div>
-            <Link className='home' to="/">KEEP SHOPPING</Link>
+            <div className='middle'>Payment failed!!!</div>
+            <div>
+                For any product related query, drop an email to
+            </div>
+            <div>fashionhub@shop.com</div>
+            <Link className='home' to="/">Continue Shopping</Link>
           </>
         }
       </div>

@@ -49,7 +49,7 @@ const Cart = ({open, setOpen}) => {
       </div>
       {products?.map(item =>(
         <div className='item' key={item.id}>
-          <img src={import.meta.env.VITE_UPLOAD_URL +item.img} alt="" />
+          <img src={item.img} alt="" />
           <div className="details">
             <h1>{item.title}</h1>
             <div className="price">

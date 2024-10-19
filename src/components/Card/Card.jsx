@@ -12,8 +12,8 @@ const Card = ({item}) => {
     img.onload = () => {
       setImageLoaded(true)
     }
-    img.src = import.meta.env.VITE_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url
-  }, [import.meta.env.VITE_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url])
+    img.src = item.attributes?.img?.data?.attributes?.url
+  }, [item.attributes?.img?.data?.attributes?.url])
   
   return (
     <Link className="link" to={`/product/${item.id}`}>
@@ -32,13 +32,13 @@ const Card = ({item}) => {
                 />
             </div>
             <img 
-              src={import.meta.env.VITE_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url} 
+              src={item.attributes?.img?.data?.attributes?.url} 
               alt="" 
               className="mainImg" 
               style={{display: !imageLoaded ? 'none' : 'inline'}}
             />
             <img 
-              src={import.meta.env.VITE_UPLOAD_URL+item.attributes?.img2?.data?.attributes?.url} 
+              src={item.attributes?.img2?.data?.attributes?.url} 
               alt="" 
               className="secondImg" 
             />

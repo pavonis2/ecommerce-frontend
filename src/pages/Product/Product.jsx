@@ -18,11 +18,11 @@ const Product = () => {
     <div className='product'>
       {loading ? ("loading") : (<><div className="left">
         <div className="images">
-          <img src={import.meta.env.VITE_UPLOAD_URL +data?.attributes?.img?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img")} loading="lazy"/>
-          <img src={import.meta.env.VITE_UPLOAD_URL +data?.attributes?.img2?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img2")} loading="lazy"/>
+          <img src={data?.attributes?.img?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img")} loading="lazy"/>
+          <img src={data?.attributes?.img2?.data?.attributes?.url} alt="" onClick={(e) => setSelectedImg("img2")} loading="lazy"/>
         </div>
         <div className="mainImg">
-          <img src={import.meta.env.VITE_UPLOAD_URL +data?.attributes?.[selectedImg]?.data?.attributes?.url} alt="" />
+          <img src={data?.attributes?.[selectedImg]?.data?.attributes?.url} alt="" />
         </div>
       </div>
       <div className="right">
