@@ -41,7 +41,7 @@ const Search = ({ setShowSearch }) => {
               setShowSearch(false);
             }}>
               <div className="image-container">
-                <img src={import.meta.env.VITE_UPLOAD_URL +item?.attributes?.img?.data?.attributes?.url} alt='' loading='lazy'/>
+                <img src={item?.attributes?.img?.data?.attributes?.url} alt='' loading='lazy'/>
               </div>
               <div className="prod-details">
                 <span className="name">{item.attributes.title}</span>
