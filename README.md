@@ -1,7 +1,7 @@
-# Fashionhub
+# FashionHub
 A complete React js e-commerce application.
 
-**live demo: []()**
+**live demo: [ecommerce-frontend-navy-zeta.vercel.app/](https://ecommerce-frontend-navy-zeta.vercel.app/)**
 
 ---
 
@@ -13,9 +13,9 @@ A complete React js e-commerce application.
 
 ## Project Description
 
-Fashionhub is an e-commerce web application, mainly focused on react js front-end development. I used SASS for styling. Also, Fashionhub used Strapi as cms. Strapi is a javascript headless content management system. I integrate the Stripe payment gateway for testing purposes only. 
+FashionHub is an e-commerce web application, mainly focused on react js front-end development. I used SASS for styling. Also, FashionHub used Strapi as cms. Strapi is a javascript headless content management system. I integrate the Stripe payment gateway for testing purposes only. 
 
-Fashionhub has basic e-commerce functionalities such as loading products categories, loading products for each category type, user can view a single item, searching an item, relating items loading for a single item, adding to a cart, removing from a cart, updating subtotal when adding or removing items, checkout page etc.
+FashionHub has basic e-commerce functionalities such as loading products categories, loading products for each category type, user can view a single item, searching an item, relating items loading for a single item, adding to a cart, removing from a cart, updating subtotal when adding or removing items, checkout page etc.
 
 ## Languages used
 
@@ -30,6 +30,7 @@ Fashionhub has basic e-commerce functionalities such as loading products categor
 - [Strapi CMS](https://strapi.io/)
 - [React icons](https://react-icons.netlify.com/)
 - [Stripe](https://stripe.com/)
+- [Cloudinary](https://cloudinary.com/)
 - More...
 ---
 
@@ -48,21 +49,21 @@ Fashionhub has basic e-commerce functionalities such as loading products categor
 
 # Website's screenshots
 
-![Emomify1](https://user-images.githubusercontent.com/59603716/229886892-f0c526a1-f6ce-40b6-b19c-6a3b81d412c3.PNG)
+![FashionHub1](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_34_52.png)
 
-![Ecomify2](https://user-images.githubusercontent.com/59603716/229886997-ca2d561d-6ea2-4d1a-95b0-9f7cf76024ae.PNG)
+![FashionHub2](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_35_07.png)
 
-![Ecomify3](https://user-images.githubusercontent.com/59603716/229887340-20ecf144-a888-4226-9f8e-70626632dd36.PNG)
+![FashionHub3](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_35_20.png)
 
-![Ecomify4](https://user-images.githubusercontent.com/59603716/229887460-0f2636e4-c94c-4d34-9549-3f399f33645a.PNG)
+![FashionHub4](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_35_39.png)
 
-![Ecomify5](https://user-images.githubusercontent.com/59603716/229887562-5f2cb03b-292a-47f5-9bc4-7235593ed5f2.PNG)
+![FashionHub5](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_35_58.png)
 
-![Ecomify6](https://user-images.githubusercontent.com/59603716/229887644-9c31480f-7fbe-454f-9c90-61275a3778ae.PNG)
+![FashionHub6](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_36_51.png)
 
-![Ecomify7](https://user-images.githubusercontent.com/59603716/229887700-5397c46b-90a2-4445-a1dc-ed59e81f6887.PNG)
+![FashionHub7](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_38_19.png)
 
-![Ecomify8](https://user-images.githubusercontent.com/59603716/229887741-6a213467-d192-40a0-bc2e-c18c8247496b.PNG)
+![FashionHub8](https://github.com/pavonis2/ecommerce-frontend/blob/8ef4094b07bf1178857906b68b15d8c9504dbee0/public/img/React%20App%20-%20Google%20Chrome%2015-10-2024%2016_38_50.png)
 
 ---
 
